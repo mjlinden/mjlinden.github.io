@@ -9,7 +9,7 @@ export class Controller {
 
         // Koppel de handlers aan de buttons
         this.menuView.bindChoiceButton(this.handleChoice);
-        this.menuView.bindSubmitButton(this.handleSubmit);
+       // this.menuView.bindSubmitButton(this.handleSubmit);
 
 
     }
