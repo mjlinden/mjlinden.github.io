@@ -47,7 +47,10 @@ export class MenuView {
         productId=productId + selectedProduct.substr(3,1);
         productId='#'+productId;
         let choice=document.querySelector(productId);
-        selected.innerHTML='Je hebt gekozen voor ' + choice.innerHTML;
+        //selected.innerHTML='Je hebt gekozen voor ' + choice.innerHTML;
+
+        let textNode=document.createTextNode("Goedemorgen");
+        selected.appendChild(textNode);
        // document.querySelector("#gekozen").setAttribute('style','display:inline')
     }
 
