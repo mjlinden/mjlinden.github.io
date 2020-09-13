@@ -47,7 +47,7 @@ export class MenuView {
         productId=productId + selectedProduct.substr(3,1);
         let choice=document.querySelector(`#${productId}`);
         selected.innerHTML=`Je hebt gekozen voor ${choice.innerHTML}`;
-        document.querySelector("#gekozen").setAttribute('style','display:inline')
+       // document.querySelector("#gekozen").setAttribute('style','display:inline')
     }
 
 
