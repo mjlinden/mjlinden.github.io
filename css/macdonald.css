@@ -46,12 +46,10 @@ hr {
     border: 2px solid #8c8c8c;
 }
 #content{
-    display:inline-grid;
+    display:grid;
     grid-template-columns: auto auto auto;
-    margin-left: 80px;
-
-
-
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .item {
@@ -111,17 +109,7 @@ hr {
     font-size: 30px;
 }
 
-#vorige:hover
-{
-    cursor: pointer;
-    background-color: #808080;
-}
 
-#volgende:hover
-{
-    cursor: pointer;
-    background-color: #808080;
-}
 #inleveren
 {
     margin-top: 20px;
