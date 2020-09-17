@@ -1,6 +1,11 @@
 
 window.addEventListener("load", function(){
-   bindChoiceButton(handleChoice);
+
+   const choices = document.querySelectorAll("#btn1, #btn2, #btn3, #btn4, #btn5");
+    choices.forEach(element => element.addEventListener('click', event => {
+
+        handleChoice(element.id);
+    }))
 }, false);
 
 
@@ -20,13 +25,6 @@ function handleChoice(id){
     selected.innerHTML=`Je hebt gekozen voor ${choice.innerHTML}`;
 }
 
-function bindChoiceButton(handler)
-{
-    const choices = document.querySelectorAll("#btn1, #btn2, #btn3, #btn4, #btn5");
-    choices.forEach(element => element.addEventListener('click', event => {
 
-        handler(element.id);
-    }))
-}
 
 
